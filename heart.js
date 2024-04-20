@@ -6,8 +6,7 @@ const heartRateData = JSON.parse(rawData);
 
 // Function to calculate statistics for a given day's data
 function calculateStats(data) {
-    // Your code to calculate min, max, median, and latestDataTimestamp
-    const bpmValues = data.map(entry => entry.bpm); // Extract BPM values from data
+    const bpmValues = data.map(entry => entry.bpm);  
     const min = Math.min(...bpmValues);
     const max = Math.max(...bpmValues);
     const sortedBPM = bpmValues.sort((a, b) => a - b);
@@ -25,4 +24,4 @@ const processedData = heartRateData.map(dayData => ({
 // Write output to JSON file
 fs.writeFileSync('output.json', JSON.stringify(processedData, null, 2));
 
-console.log('Output file "output.json" created successfully.');
+console.log('Output file "output.json" created successfully.');  
