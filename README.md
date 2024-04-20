@@ -28,5 +28,5 @@ To run the project, follow these steps:
 **Step 6 : Verify output** 
 After running the project, check the output.json file in the project directory to ensure that it contains the expected output format
 
-**Step 7 : Create github repository** 
+**Step 7 : Create github repository** :  
 Create a new github repository and push the code 
